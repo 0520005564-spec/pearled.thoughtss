@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GirlBlog Universe 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pink">
+
+<canvas id="glitter"></canvas>
+
+<header>
+  <h1>💖 GirlBlog Universe 💖</h1>
+  <button onclick="triggerUpdate()">💿 Update</button>
+</header>
+
+<nav>
+  <button onclick="openTab('diary')">📔</button>
+  <button onclick="openTab('learn')">📚</button>
+  <button onclick="openTab('affirm')">💌</button>
+  <button onclick="openTab('profile')">👤</button>
+  <button onclick="openTab('mood')">🌈</button>
+</nav>
+
+<!-- 💬 CHARACTER -->
+<div id="character">
+  <img src="https://i.imgur.com/8Km9tLL.png">
+  <div id="speech">hi bestie 💖</div>
+</div>
+
+<!-- 🎵 MUSIC -->
+<div class="music">
+  <button onclick="toggleMusic()">🎵</button>
+</div>
+<audio id="music" loop>
+  <source src="https://files.catbox.moe/7q6b7p.mp3">
+</audio>
+
+<!-- 📔 DIARY -->
+<div id="diary" class="tab">
+  <h2>🔒 Diary</h2>
+  <input type="password" id="pass" placeholder="password">
+  <button onclick="setPass()">Unlock</button>
+
+  <textarea id="entry"></textarea>
+  <button onclick="saveEntry()">Save</button>
+
+  <div id="entries"></div>
+</div>
+
+<!-- 📚 LEARN -->
+<div id="learn" class="tab">
+  <h2>📚 Insecurities</h2>
+  <p>Insecurities are feelings of doubt and lack of confidence.</p>
+
+  <h3>💔 Causes</h3>
+  <ul>
+    <li>👨‍👩‍👧 Parenting</li>
+    <li>👯 Peers</li>
+    <li>📱 Social Media</li>
+  </ul>
+</div>
+
+<!-- 💌 AFFIRM -->
+<div id="affirm" class="tab">
+  <h2>💌 Affirmations</h2>
+  <p id="affirmText"></p>
+  <button onclick="newAffirm()">💖 Tap</button>
+</div>
+
+<!-- 👤 PROFILE -->
+<div id="profile" class="tab">
+  <input id="name" placeholder="name">
+  <input id="avatar" placeholder="avatar url">
+  <button onclick="saveProfile()">save</button>
+
+  <h3 id="showName"></h3>
+  <img id="showAvatar">
+
+  <h3>🎨 Theme</h3>
+  <button onclick="setTheme('pink')">pink</button>
+  <button onclick="setTheme('white')">white</button>
+  <button onclick="setTheme('dark')">dark</button>
+</div>
+
+<!-- 🌈 MOOD -->
+<div id="mood" class="tab">
+  <h2>Mood Tracker</h2>
+  <button onclick="setMood('😊')">😊</button>
+  <button onclick="setMood('😢')">😢</button>
+  <button onclick="setMood('😡')">😡</button>
+  <button onclick="setMood('😍')">😍</button>
+
+  <p id="moodDisplay"></p>
+</div>
+
+<!-- 🧸 STICKERS -->
+<div id="stickers">
+  <img src="https://i.imgur.com/1X6KQ.png" draggable="true" class="sticker">
+  <img src="https://i.imgur.com/JqEuJ.png" draggable="true" class="sticker">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
