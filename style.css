@@ -1,0 +1,63 @@
+body {
+  font-family: cursive;
+  text-align: center;
+  transition: 0.3s;
+}
+
+header {
+  background: pink;
+  padding: 10px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+}
+
+/* THEMES */
+.pink { background:#ffe4ec; color:#ff4da6; }
+.white { background:#fff; color:#333; }
+.dark { background:#111; color:#fff; }
+
+/* CHARACTER */
+#character {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#character img {
+  width: 80px;
+}
+
+#speech {
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* STICKERS */
+.sticker {
+  width: 50px;
+  position: absolute;
+  cursor: grab;
+}
+
+/* GLITTER */
+#glitter {
+  position: fixed;
+  top:0;
+  left:0;
+  pointer-events:none;
+}
